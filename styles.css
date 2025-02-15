@@ -1,0 +1,386 @@
+:root {
+  --text-color: #1a1a1a;
+  --subtle-text: #4b5563;
+  --background: #f9fafb;
+  --subtle-bg: #f1f5f9;
+  --accent: #2563eb;
+  --border: #e5e7eb;
+  --gradient-1: #8b4513; /* Saddle Brown */
+  --gradient-2: #d2691e; /* Chocolate Brown */
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  background: var(--background);
+}
+
+header {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  padding: 3px;
+  background: linear-gradient(45deg, var(--gradient-1), var(--gradient-2));
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 0 1.5rem 0;
+  color: var(--subtle-text);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.social-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.about {
+  max-width: 580px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: var(--subtle-text);
+  line-height: 1.6;
+}
+
+.mini-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.mini-links a {
+  color: var(--subtle-text);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.mini-links a:hover {
+  color: var(--accent);
+  text-decoration: none;
+  background: var(--subtle-bg);
+  transform: translateY(-2px);
+}
+
+.mini-links img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.mini-links a:hover img {
+  opacity: 1;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.stat-item {
+  padding: 1rem;
+  background: var(--subtle-bg);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.stat-number {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--subtle-text);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tag {
+  background: var(--subtle-bg);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: var(--subtle-text);
+}
+
+section {
+  margin: 3rem 0;
+}
+
+.projects {
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.project-item {
+  padding: 1.5rem;
+  background: var(--subtle-bg);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.project-item h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.project-item h3 a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.project-item p {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.tech-stack {
+  font-size: 0.8rem;
+  color: var(--subtle-text);
+}
+
+footer {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--subtle-text);
+}
+
+.experience-item {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: var(--subtle-bg);
+  border-radius: 4px;
+}
+
+.experience-date {
+  min-width: 85px;
+  font-size: 0.9rem;
+  color: var(--subtle-text);
+}
+
+.experience-content {
+  flex: 1;
+}
+
+.experience-content h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.tech-container {
+  position: relative;
+  overflow: hidden;
+  background: var(--subtle-bg);
+  padding: 1.5rem 0;
+  margin: 2rem 0;
+  border-radius: 8px;
+}
+
+.tech-row {
+  display: flex;
+  animation: slideLeft 30s linear infinite;
+  width: max-content;
+  gap: 2rem;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 2rem));
+  }
+}
+
+.tech-item {
+  flex-shrink: 0;
+  width: 100px;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.contact {
+  max-width: 500px;
+  margin: 4rem auto;
+  text-align: center;
+  padding: 2rem;
+  background: var(--subtle-bg);
+  border-radius: 8px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+.section-heading {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 1rem;
+}
+
+.tech-item {
+  text-align: center;
+  padding: 0.75rem;
+}
+
+.tech-item img {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 0.25rem;
+  opacity: 0.9;
+}
+
+.tech-item p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var (--subtle-text);
+}
+
+.section-title {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+a,
+.project-item,
+.tech-item {
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+a:hover::after,
+.project-item:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, var(--gradient-1), var(--gradient-2));
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1.5rem 1rem;
+  }
+
+  .experience-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .experience-date {
+    min-width: auto;
+  }
+
+  .mini-links {
+    gap: 0.8rem;
+  }
+}
+
+.highlight-section,
+.achievements,
+.achievement-item,
+.achievement-number,
+.expertise-grid,
+.expertise-item,
+.cta-section,
+.cta-button {
+  display: none;
+}
+
+/* Remove these classes as they're no longer needed */
+.theme-toggle,
+[data-theme="dark"],
+[data-theme="dark"] .theme-toggle {
+  display: none;
+}
